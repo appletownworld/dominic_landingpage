@@ -8,7 +8,7 @@ const BOT_CONFIG = {
     
     // ID группы ожидания (получите через @userinfobot)
     // Например: '-1001234567890'
-    waitingGroupId: 'YOUR_GROUP_ID',
+    waitingGroupId: '-1004843260428',
     
     // ID администраторов (получите через @userinfobot)
     // Например: ['123456789', '987654321']
