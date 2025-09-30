@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доминик Джокер в Корее - Концерт 14 февраля 2026</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">DOMINIC JOKER</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Главная</a>
+                <a href="#about" class="nav-link">О концерте</a>
+                <a href="#tickets" class="nav-link">Билеты</a>
+                <a href="#contact" class="nav-link">Контакты</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="particles" id="particles"></div>
+            <div class="gradient-overlay"></div>
+            <div class="hero-image">
+                <img src="images/1.jpg" alt="Доминик Джокер" class="artist-portrait">
+                <div class="image-overlay"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>ЭКСКЛЮЗИВНО В КОРЕЕ</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="title-line">ДОМИНИК</span>
+                    <span class="title-line joker-text">ДЖОКЕР</span>
+                </h1>
+                
+                <div class="hero-subtitle">
+                    <span class="subtitle-main">LIVE IN SEOUL</span>
+                    <div class="subtitle-date">
+                        <span class="date-number">14</span>
+                        <span class="date-text">ФЕВРАЛЯ 2026</span>
+                    </div>
+                </div>
+
+                <div class="countdown-section">
+                    <div class="countdown-header">
+                        <h3>ДО НАЧАЛА ПРОДАЖ</h3>
+                        <div class="countdown-line"></div>
+                    </div>
+                    
+                    <div class="countdown-grid" id="countdown">
+                        <div class="countdown-card">
+                            <div class="countdown-number" id="days">00</div>
+                            <div class="countdown-label">ДНЕЙ</div>
+                        </div>
+                        <div class="countdown-card">
+                            <div class="countdown-number" id="hours">00</div>
+                            <div class="countdown-label">ЧАСОВ</div>
+                        </div>
+                        <div class="countdown-card">
+                            <div class="countdown-number" id="minutes">00</div>
+                            <div class="countdown-label">МИНУТ</div>
+                        </div>
+                        <div class="countdown-card">
+                            <div class="countdown-number" id="seconds">00</div>
+                            <div class="countdown-label">СЕКУНД</div>
+                        </div>
+                    </div>
+                    
+                    <div class="sale-info">
+                        <i class="fas fa-ticket-alt"></i>
+                        <span>Продажи начинаются 1 ноября 2025</span>
+                    </div>
+                </div>
+
+                <!-- Форма раннего доступа -->
+                <div class="early-access-form">
+                    <div class="form-header">
+                        <h3>🎫 Получи ранний доступ к билетам!</h3>
+                        <p>Заполни форму и получи скидку 20% на билеты + ранний доступ за 24 часа до официального старта продаж</p>
+                    </div>
+                    <form id="earlyAccessForm" class="access-form">
+                        <div class="form-group">
+                            <input type="text" id="userName" name="name" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="userPhone" name="phone" placeholder="Ваш телефон" required>
+                        </div>
+                        <button type="submit" class="access-btn">
+                            <span class="btn-text">Получить ранний доступ</span>
+                            <span class="btn-icon">🚀</span>
+                        </button>
+                    </form>
+                    <div class="form-benefits">
+                        <div class="benefit">
+                            <span class="benefit-icon">⚡</span>
+                            <span>Ранний доступ за 24 часа</span>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit-icon">💰</span>
+                            <span>Скидка 20% на билеты</span>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit-icon">🎯</span>
+                            <span>Лучшие места в зале</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-actions">
+                    <button class="btn btn-primary" id="notifyBtn">
+                        <span class="btn-text">Уведомить о продажах</span>
+                        <i class="fas fa-bell"></i>
+                    </button>
+                    <button class="btn btn-secondary" id="scrollBtn">
+                        <span class="btn-text">Узнать больше</span>
+                        <i class="fas fa-arrow-down"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>SCROLL</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">О КОНЦЕРТЕ</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>ЭПИЧЕСКОЕ ШОУ В СЕУЛЕ</h3>
+                        <p>Доминик Джокер впервые приезжает в Корею с грандиозным концертом в День Святого Валентина! Это будет незабываемое шоу с потрясающими визуальными эффектами, живой музыкой и энергетикой, которая покорит сердца корейских поклонников.</p>
+                        <p>Не упустите возможность стать частью истории - первое выступление легендарного артиста в самом сердце Сеула!</p>
+                    </div>
+                    
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <i class="fas fa-music"></i>
+                            <span>Живая музыка</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-fire"></i>
+                            <span>Потрясающие эффекты</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-heart"></i>
+                            <span>День Святого Валентина</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-star"></i>
+                            <span>Эксклюзивное шоу</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="concert-details">
+                    <div class="detail-card">
+                        <div class="detail-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h4>ДАТА</h4>
+                            <p>14 февраля 2026</p>
+                            <span>День Святого Валентина</span>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <div class="detail-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h4>МЕСТО</h4>
+                            <p>Сеул, Южная Корея</p>
+                            <span>Центральная площадка</span>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <div class="detail-icon">
+                            <i class="fas fa-ticket-alt"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h4>ПРОДАЖИ</h4>
+                            <p>С 1 ноября 2025</p>
+                            <span>Ограниченное количество</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artist Gallery Section -->
+    <section class="artist-gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">АРТИСТ</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item main-image">
+                    <img src="images/2.jpg" alt="Доминик Джокер - главное фото" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>ДОМИНИК ДЖОКЕР</h3>
+                            <p>Легендарный артист с уникальным стилем</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/3.jpg" alt="Доминик Джокер - стиль" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h4>СТИЛЬ</h4>
+                            <p>Уникальная эстетика</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/1.jpg" alt="Доминик Джокер - выступление" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h4>ЭНЕРГИЯ</h4>
+                            <p>Незабываемые выступления</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="artist-info">
+                <div class="artist-text">
+                    <h3>О ДОМИНИКЕ ДЖОКЕРЕ</h3>
+                    <p>Доминик Джокер — это не просто артист, это явление в мире музыки. Его уникальный стиль, харизма и энергия покорили миллионы поклонников по всему миру. Теперь он впервые приезжает в Корею, чтобы подарить незабываемое шоу в День Святого Валентина.</p>
+                    <p>Каждое выступление Доминика — это настоящее театральное представление, где музыка встречается с визуальными эффектами, создавая магическую атмосферу, которая остается в памяти навсегда.</p>
+                </div>
+                
+                <div class="artist-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">50M+</div>
+                        <div class="stat-label">Прослушиваний</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Концертов</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">15</div>
+                        <div class="stat-label">Лет на сцене</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1</div>
+                        <div class="stat-label">Первый раз в Корее</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tickets Section -->
+    <section id="tickets" class="tickets">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">БИЛЕТЫ</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="tickets-grid">
+                <div class="ticket-card vip">
+                    <div class="ticket-header">
+                        <h3>VIP</h3>
+                        <div class="ticket-price">₩150,000</div>
+                    </div>
+                    <div class="ticket-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Лучшие места</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Meet & Greet</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Эксклюзивный мерч</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Ранний вход</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="ticket-card premium">
+                    <div class="ticket-header">
+                        <h3>PREMIUM</h3>
+                        <div class="ticket-price">₩100,000</div>
+                    </div>
+                    <div class="ticket-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Отличные места</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Подарочный набор</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Приоритетный вход</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="ticket-card standard">
+                    <div class="ticket-header">
+                        <h3>STANDARD</h3>
+                        <div class="ticket-price">₩70,000</div>
+                    </div>
+                    <div class="ticket-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Хорошие места</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Доступ к бару</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tickets-note">
+                <i class="fas fa-info-circle"></i>
+                <span>Цены указаны в корейских вонах. Продажи начинаются 1 ноября 2025</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DOMINIC JOKER</h3>
+                    <p>Эксклюзивный концерт в Корее</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>КОНЦЕРТ</h4>
+                    <ul>
+                        <li>14 февраля 2026</li>
+                        <li>Сеул, Южная Корея</li>
+                        <li>Продажи с 1 ноября 2025</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>КОНТАКТЫ</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@dominickjoker.kr</li>
+                        <li><i class="fas fa-phone"></i> +82-2-1234-5678</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Сеул, Южная Корея</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Доминик Джокер. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bot-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+</html>
